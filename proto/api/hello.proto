@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package grpc_gateway_exp;
+option go_package = "grpc_gateway_exp/proto/grpc_gateway_exp;grpc_gateway_exp";
+
+import "google/api/annotations.proto";
+
+service HelloService
+{
+    rpc Hello(HelloMessage) returns (HelloResponse)
+    {
+        option (google.api.http) = {
+            get: "/hello"
+        };
+    }
+}
+
+message HelloMessage 
+{
+    string message = 1;
+}
+
+message HelloResponse 
+{
+    string result = 1;
+}
+
