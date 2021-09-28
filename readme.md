@@ -9,7 +9,7 @@ gRPC-gateway 可以帮我们做到，它读取 protobuf service 定义并生成�
 
 ### 借助 [buf](https://github.com/bufbuild/buf) 友好生成 protobuf 所需代码
 
-** 安装 buf
+* 安装 buf
 
 ```
 BIN="/usr/local/bin" && \
